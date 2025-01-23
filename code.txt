@@ -1,0 +1,334 @@
+/***** Navigation *****/
+nav {
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    padding: 10px;
+    font-family: "League Spartan", sans-serif;
+    background-color: rgba(128, 128, 128, 0);
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0px 4px 16px -4px rgba(0,0,0,0.5);
+}
+.navContainer {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.navLogo {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 300%;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+}
+.navTabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 125%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.dropdownTab {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 2em;
+    min-width: 15em;
+    background: white;
+    padding: 0 1em 1em 1em;
+    text-align: left;
+    border-radius: 0 0 7.5% 7.5%;
+}
+.dropdownTitle {
+    text-align: left;
+    padding-top: .75em;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: underline 1px solid #006942;
+    text-underline-offset: .25em;
+}
+.dropdownList {
+    padding-top: .5em
+}
+.dropdownList > li {
+    padding-top: .5em;
+}
+.indent{
+    padding-left: 20px;
+}
+.fadeIn {
+    transition-duration: 3s;
+}
+            
+.navMenu {
+    display: grid;
+    place-items: center;
+}
+
+#navsearch {
+    resize: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: black solid;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: right;
+    width: 100px
+}
+
+#navsearch:focus {
+    background-color: white;
+    width: 500px;
+    transition: width 5s, height 4s;
+    outline: none;
+}
+
+#menu {
+    display: inline-flex;
+}
+
+
+
+.landingTitle {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 500%;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #4df068;
+}
+
+
+
+
+
+info page stuff
+
+.SolutionArray {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 125%;
+    justify-content: center;
+}
+.SolutionArray2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 125%;
+    justify-content: center;
+    margin: 0 15%;
+}
+
+.solutionBtn {
+    float: bottom;
+    background-color: gold;
+    margin: 1.5em 15% .1em 15%;
+    padding: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px -4px rgba(0,0,0,0.5);
+    transition-duration: .5s;
+}
+/* .singleSolutionArray {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 125%;
+    padding-bottom: 3em;
+    margin: 0 37%;
+} */
+
+
+/* .greenBackground2 {
+    background-image: url(images/green\ background.svg);
+    background-size: cover;
+    margin-top: 3em;
+    height: 15em;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+.infoBox2 {
+    position: relative;
+    margin: 1em 20%;
+    padding: 2.5em;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 125%;
+    transform: translateY(-107%);
+}
+.infoBox5 {
+    position: relative;
+    margin: 1em 20%;
+    padding: 2.5em;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 125%;
+}
+.gradientBackground {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    margin-top: -12em;
+} */
+
+/* .arrayHeader {
+    background-color: white;
+    margin: 1em 30%;
+    padding: .5em;
+    height: 100px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    display: grid;
+    place-items: center;
+    border:#19ad77 5px solid;
+}
+.arrayHeaderText {
+    background-image: linear-gradient(45deg, #4df068, #006942);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 400%;
+    font-weight: bold;
+} */
+ 
+
+
+ .menuArray {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0em 15%;
+    font-size: 125%;
+    justify-content: center;
+}
+.menuBox {
+    display: grid;
+    position: relative;
+    background-color: white;
+    margin: 2em;
+    padding: 1em;
+    z-index: 3;
+    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    transition-duration: .25s;
+}
+.tripBox:hover {
+    transform: scale(1.05);
+    transition-duration: .25s;
+}
+.tripImg {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+#tripImg1 > img {
+    transform: translate(-35%, -22%);
+}
+#tripImg2 > img {
+    transform: translate(-34%, -49%);
+}
+#tripImg3 > img {
+    transform: translate(-22%, -36%);
+}
+.tripTitle {
+    padding-bottom: .5em;
+    font-size: 150%;
+    font-weight: bold;
+    color: #006942;
+    text-decoration: underline 1px solid #006942;
+    text-underline-offset: .25em;
+    line-height: 40px;
+}
+
+
+
+<!-- <div class="SolutionArray2">
+    <div class="tripBox"><a href="infoSubpages/solarWater.html">
+        <div class="tripImg" id="tripImg3"><img src="images/solar panel.jpg"></div>
+        <div class="tripTitle">Solar Water Heaters</div>
+        <div class="tripDesc">Thermal heating.</div>
+        <div class="solutionBtn">Learn More</div></a>
+    </div>
+    <div class="tripBox"><a href="infoSubpages/energyEfficiency.html">
+        <div class="tripImg" id="tripImg3"><img src="images/energy bulb.jpg"></div>
+        <div class="tripTitle">Energy Efficiency</div>
+        <div class="tripDesc">Save some energy!</div>
+        <div class="solutionBtn">Learn More</div></a>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+Home Page
+
+<div class="infoBoxDecor">
+    <div class="infoBox">
+        <div class="infoTitle">Green Energy? What's that?</div>
+        Green energy is energy that can be produced using a source that does not harm the natural environment. 
+        It is commonly produced using renewable energy sources including solar power, wind power, and hydropower. 
+        Using green energy rather than fossil fuels can reduce the amount of greenhouse gas emissions in the atmosphere and slow climate change. 
+        Everyone who makes an effort to use green energy solutions contributes to a cleaner environment and a more sustainable future.
+        <div class="mainTitle" style="padding-top: 1em">How can I help?</div>
+        That's where we come in. Here at <span class="logo">zelená</span>, we strive to be the best resource possible for finding green energy solutions for your home! 
+        Visit our information database for renewable solutions, installation costs, and tax rebate applicability. 
+    </div>    
+</div>
+
+<div class="reverseTriangleTransition"></div>
+
+
+<div class="greenBackground">   
+    <div class="filler"></div> 
+    <div class="filler"></div> 
+    <div class="tripleBox">
+        <div class="tripBox" onfocus="tripBoxAninim()">
+            <div class="tripImg" id="tripImg1"><img src="images/plant in lightbulb.jpg"></div>
+            <div class="tripTitle">Solutions</div>
+            <div class="tripDesc">
+                Learn about all the green energy initatives offered by the Environmental Protection Agency.
+            </div>
+        </div>
+        <div class="tripBox">
+            <div class="tripImg" id="tripImg2"><img src="images/money.jpg"></div>
+            <div class="tripTitle">Costs</div>
+            <div class="tripDesc">
+                See if anything matches your budget.
+            </div>
+        </div>
+        <div class="tripBox">
+            <div class="tripImg" id="tripImg3"><img src="images/taxes.jpg"></div>
+            <div class="tripTitle">Financial Incentives</div>
+            <div class="tripDesc">
+                Find a deal that best suits you and your home.
+            </div>
+        </div>
+        <div class="button" id="databaseBtn" onclick="toDatabase()">Visit the Information Database</div>
+    </div>
+
+</div>
+
+<div class="triangleTransition"></div>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>zelená</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="webmaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="webmaster.js"></script>
+</head>
+
+<body>
+<nav onmouseleave="closeDropdowns()">
+<div class="navContainer">
+    <div class="navLogo"><a href="index.html">zelená</a></div>
+    <div class="navTabs">
+        <div id="navTab1" onmouseover="triggerDropdown1()">
+            <div class="navTitle"><a href="info.html">Information Database <img src="images/down-arrow.png" class="down"></a></div>
+            <div id="1" class="dropdownTab fadeIn">
+                <div class="dropdownTitle"><a href="info.html" id="titleLink">Information Database</a></div>
+                <ul class="dropdownList">
+                    <li><a href="infoSubpages/solar.html">Solar Energy</a></li>
+                    <li><a href="infoSubpages/wind.html">Wind Energy</a></li>
+                    <li><a href="infoSubpages/geothermal.html">Geothermal Energy</a></li>
+                    <li><a href="infoSubpages/solarWater.html">Solar Water Heating</a></li>
+                    <li><a href="infoSubpages/energyEfficiency.html">Energy Efficiency</a></li>
+                    <li><a href="infoSubpages/programs.html">Renewable Energy Programs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="navTab2" onmouseover="triggerDropdown2()">
+            <div class="navTitle"><a href="about.html">About <img src="images/down-arrow.png" class="down"></a></div>
+            <div id="2" class="dropdownTab">
+                <div class="dropdownTitle"><a href="about.html" id="titleLink">About</a></div>
+                <ul class="dropdownList">
+                    <li><a href="about.html#aboutUs">About Us</a></li>
+                    <li><a href="about.html#faq">FAQ</a></li>
+                    <li><a href="about.html#statement">Statement of Affirmation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="navTab3" onmouseover="triggerDropdown3()">
+            <div class="navTitle"><a href="references.html">References <img src="images/down-arrow.png" class="down"></a></div>
+            <div id="3" class="dropdownTab">
+                <div class="dropdownTitle"><a href="references.html" id="titleLink">References</a></div>
+                <ul class="dropdownList">
+                    <li><a href="references.html#worksCited">Works Cited</a></li>
+                    <li><a href="references.html#planOfWork">Plan of Work Log</a></li>
+                    <li><a href="references.html#copyrightChecklist">Student Copyright Checklist</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="navMenu"></div>
+</div>
+</nav>
+
+<div class="header">
+    <div class="headerBox">
+        <div class="headerTitle">About zelená</div>
+        <div class="headerSubtitle">Learn about us!</div>
+    </div>
+</div>
+
+<div class="headerShape"></div>
+
+<main>
+<div class="filler" id="aboutUs"></div> 
+
+
+<div class="greenBackground2"></div>
+<div class="infoBox2">
+    <div class="infoTitle">About Us</div>
+    Our Mission: Here at zelená, our mission is to be at the forefront of the renewable energy revolution, driving the global transition towards a sustainable and greener future. 
+    We are dedicated to compiling innovative green energy solutions to meet the world's growing energy needs while minimizing our global environmental impact.
+</div>    
+
+<div class="gradientBackground" id="faq">   
+    <div class="filler"></div> 
+    <div class="infoBox5">
+        <div class="infoTitle">Frequently Asked Questions</div>
+        <p>Q. Where do you get your information?<br>
+        A. All of our resources can be found on the References page.</p>
+        <p style="padding-top: 1em;">Q. Is the information on the site reliable and up-to-date?<br>
+        A. Most of the sources that we used were government-owned sites. We update our information every week to ensure that homeowners have the most up to date information.</p>
+        <p style="padding-top: 1em;">Q. How can I stay updated on new additions to the website?<br>
+        A. You can subscribe to our newsletter or follow us on our social media platforms to receive updates about zelená.</p>
+    </div> 
+    <div class="filler"></div> 
+</div>
+
+<div class="filler"></div> 
+<div class="infoBoxDecor" id="statement">
+    <div class="infoBox">
+        <div class="infoTitle">Statement of Affirmation</div>
+        All work on this website was done by members of the team. No framework systems or HTML generators were used during the creation of this website. 
+        Please note that Github is being used as a source code repository and as a hosting site, and not for any other purposes.
+    </div>    
+</div>
+
+<div class="filler"></div> 
+<div class="filler"></div> 
+
+<div class="foregroundBox">
+    <div class="foregroundTitle">Join Our Email List!</div>
+    <div class="foregroundDesc">
+        Get notified of changes when they happen.
+    </div>
+    <form class="newsletterForm">
+        <input type="text" name="name" placeholder="Full Name" required id="newsletterName">
+        <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
+        <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
+    </form>
+</div>
+
+<div id="newsletterOverlay" class="greyOverlay hidden" onclick="closeModal()"></div>
+<div id="newsletterModal" class="newsletterModal hidden">
+
+    <div class="modalMessage">Thank you for joining! We wish you the best of luck on your endeavors!</div>
+</div>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="animations.js"></script>
+</body>
+
+<footer>
+<div class="footerContainer">
+    <div class="footerMain">
+        <div class="footerTop">
+            <div class="contact">
+                <div class="footerLogo">zelená</div>
+                <div class="contactIcons">
+                    <div><a href="https://twitter.com/zelenacompany" target="_blank"><img src="images/twitter.png" width="20px"></a></div>
+                    <div><a href="https://www.instagram.com/zelenacompany/" target="_blank"><img src="images/instagram.png" width="20px"></a></div>
+                    <div><a href="https://www.facebook.com/profile.php?id=61555800010255" target="_blank"><img src="images/facebook.png" width="20px"></a></div>
+                    <div><a href="https://www.youtube.com/@zelena-ie7hr" target="_blank"><img src="images/youtube.png" width="20px"></a></div>
+                </div>
+            </div>
+            <div class="mission">
+                Our Mission: Here at zelená, our mission is to be at the forefront of the renewable energy revolution, driving the global transition towards a sustainable and greener future. 
+                We are dedicated to compiling innovative green energy solutions to meet the world's growing energy needs while minimizing our global environmental impact.
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div id="footerNav1">
+                <div class="footerTitle"><a href="info.html" id="titleLink">Information Database</a></div>
+                <ul class="footerList">
+                    <li><a href="infosubpages/solar.html">Solar Energy</a></li>
+                    <li><a href="infosubpages/wind.html">Wind Energy</a></li>
+                    <li><a href="infosubpages/geothermal.html">Geothermal Energy</a></li>
+                    <li><a href="infosubpages/solarWater.html">Solar Water Heating</a></li>
+                    <li><a href="infosubpages/energyEfficiency.html">Energy Efficiency</a></li>
+                    <li><a href="infoSubpages/programs.html">Renewable Energy Programs</a></li>
+                </ul>
+            </div>
+            <div id="footerNav2">
+                <div class="footerTitle"><a href="about.html" id="titleLink">About</a></div>
+                <ul class="footerList">
+                    <li><a href="about.html#aboutUs">About Us</a></li>
+                    <li><a href="about.html#faq">FAQ</a></li>
+                    <li><a href="about.html#statement">Statement of Affirmation</a></li>
+                </ul>
+            </div>
+            <div id="footerNav3">
+                <div class="footerTitle"><a href="references.html" id="titleLink">References</a></div>
+                <ul class="footerList">
+                    <li><a href="references.html#worksCited">Works Cited</a></li>
+                    <li><a href="references.html#planOfWork">Plan of Work Log</a></li>
+                    <li><a href="references.html#copyrightChecklist">Student Copyright Checklist</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">Copyright © zelená 2024 – Webmaster 2103-901</div>
+</footer>
+
+</html>
