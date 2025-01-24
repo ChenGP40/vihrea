@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script src="webmaster.js"></script>
 </head>
 
 <body>
@@ -34,7 +33,7 @@
     <div id="navBtm">
         <div class="nameLogo"><a href="index.html"><img class="img" src="images/vihrealogo-removebg-preview.png"></a></div>
         <div class="navBlocks">
-            <div><a href="references.html">REFERENCES</a></div>
+            <div><a href="references.html">REFERENCE PAGE</a></div>
             <div><a href="story.html">OUR STORY</a></div>
             <div><a href="catering.html">CATERING</a></div>
             <div><a href="reservations.html">RESERVATIONS</a></div>
@@ -84,8 +83,8 @@
     <div class="descriptionFloat2">
         <p class="floatTitle" style="margin-top: 1em">FRESH FRESHNESS</p>
         <p class="floatSubtitle">A CULINARY EXPERIENCE</p>
-        <img class="separator" src="images/fancy.png">
-        <P class="floatText">Take a look at our menu thats full of good green stuff yeah eayh yeahhhhh</P>
+        <img id="trigger2" class="separator" src="images/fancy.png">
+        <P class="floatText">Don’t wait! Reserve a table and dine with us today!</P>
         <a class="floatBtn2" href="catering.html">Reservations</a>   
         <a class="floatBtn3" href="catering.html">Catering</a>   
     </div>
@@ -97,10 +96,10 @@
 <div class="descriptionBox" style="border-bottom: .5em solid #8EB44E">
     <img src="images/dan-meyers-IQVFVH0ajag-unsplash.jpg" class="img" style="filter: brightness(80%);">
     <!-- <img src="images/ivan-stern-LOLSb7m6XkU-unsplash.jpg" class="floatImg2"> -->
-    <div class="descriptionFloat3">
+    <div id="trigger3" class="descriptionFloat3">
         <p class="floatTitle">ABOUT VIHREÄ</p>
         <p class="floatSubtitle">A FIGHT FOR SUSTAINABILITY</p>
-        <img class="separator" src="images/fancy.png">
+        <img  class="separator" src="images/fancy.png">
         <P class="floatText">Sourced from local farmers, our ingredients are guaranteed to be fresh and preservative-free.</P>
         <a class="floatBtn" href="menu.html">Our Story</a>
     </div>
@@ -115,31 +114,34 @@
 
 <div class="newsletter">
     <div class="foregroundBox">
-        <div class="foregroundTitle">Join Our Email List!</div>
+        <div class="foregroundTitle">Join Our Mailing List!</div>
         <div class="foregroundDesc">
-            Get notified of changes when they happen.
+            Get notified of the best deals and events.
         </div>
         <form class="newsletterForm">
-            <input type="text" name="name" placeholder="Full Name" required id="newsletterName">
+            <input type="text" name="name" placeholder="Full Name" required id="newsletterName"><br>
             <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
             <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
         </form>
     </div>
+</div>
 
 <div id="newsletterOverlay" class="greyOverlay hidden" onclick="closeModal()"></div>
 <div id="newsletterModal" class="newsletterModal hidden">
-
     <div class="modalMessage">
-        <p>Thank you for joining! We wish you the best of luck on your endeavors!</p>
-        <p>Press anywhere to close.</p>
+        <p class="storyFloatTitle">SUCCESS!</p>
+        <img class="separator" style="padding-top: .5em; padding-bottom: 0.5em" src="images/fancy.png">
+        <p>Thank you for joining! You'll be the first to know about the best deals, new events, and more!</p>
+        <p style="padding-top: 1em; font-style: italic;">Press anywhere to close.</p>
     </div>
 </div>
-
 
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="animations.js"></script>
+<script src="webmaster.js"></script>
+
 </body>
 
 <footer>
@@ -147,45 +149,50 @@
         <div class="footerMain">
             <div class="footerTop">
                 <div class="contact">
-                    <div class="footerLogo"><img class="img" style="filter: brightness(200%)" src="images/vihrealogo-removebg-preview.png"></div>
+                    <div class="footerLogo"><img class="img" style="filter: brightness(1000%)" src="images/vihrealogo-removebg-preview.png"></div>
                     <div class="contactIcons">
-                        <div><a href="https://twitter.com/zelenacompany" target="_blank"><img src="images/twitter.png" width="20px"></a></div>
-                        <div><a href="https://www.instagram.com/zelenacompany/" target="_blank"><img src="images/instagram.png" width="20px"></a></div>
-                        <div><a href="https://www.facebook.com/profile.php?id=61555800010255" target="_blank"><img src="images/facebook.png" width="20px"></a></div>
-                        <div><a href="https://www.youtube.com/@zelena-ie7hr" target="_blank"><img src="images/youtube.png" width="20px"></a></div>
+                        <div style="grid-column: 2 / 3;"><a href="https://x.com/vihrea_company" target="_blank"><img src="images/twitter3.png" width="20px"></a></div>
+                        <div><a href="https://youtube.com/@vihrea_company" target="_blank"><img src="images/youtube3-removebg-preview.png" width="20px"></a></div>
                     </div>
                 </div>
                 <div class="mission">
-                    Our Mission: Here at zelená, our mission is to be at the forefront of the renewable energy revolution, driving the global transition towards a sustainable and greener future. 
-                    We are dedicated to compiling innovative green energy solutions to meet the world's growing energy needs while minimizing our global environmental impact.
+                    Our Mission: Here at vihreä, our mission is to be at the forefront of vegan and vegetarian cuisine, driving the global transition towards a sustainable and greener future. 
+                    We are dedicated to following innovative green solutions to meet the world's growing food needs while minimizing our global environmental impact.
                 </div>
             </div>
             <div class="footerBottom">
                 <div id="footerNav1">
-                    <div class="footerTitle"><a href="info.html" id="titleLink">Information Database</a></div>
+                    <div class="footerTitle">Menus</div>
                     <ul class="footerList">
-                        <li><a href="infosubpages/solar.html">Solar Energy</a></li>
-                        <li><a href="infosubpages/wind.html">Wind Energy</a></li>
-                        <li><a href="infosubpages/geothermal.html">Geothermal Energy</a></li>
-                        <li><a href="infosubpages/solarWater.html">Solar Water Heating</a></li>
-                        <li><a href="infosubpages/energyEfficiency.html">Energy Efficiency</a></li>
-                        <li><a href="infoSubpages/programs.html">Renewable Energy Programs</a></li>
+                        <li><a href="our-menus.html#brunch">Brunch</a></li>
+                        <li><a href="our-menus.html#lunch">Lunch</a></li>
+                        <li><a href="our-menus.html#dinner">Dinner</a></li>
+                        <li><a href="our-menus.html#dessert">Dessert</a></li>
                     </ul>
                 </div>
                 <div id="footerNav2">
-                    <div class="footerTitle"><a href="about.html" id="titleLink">About</a></div>
+                    <div class="footerTitle">Services</div>
                     <ul class="footerList">
-                        <li><a href="about.html#aboutUs">About Us</a></li>
-                        <li><a href="about.html#faq">FAQ</a></li>
-                        <li><a href="about.html#statement">Statement of Affirmation</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="catering.html">Catering</a></li>
                     </ul>
                 </div>
                 <div id="footerNav3">
-                    <div class="footerTitle"><a href="references.html" id="titleLink">References</a></div>
+                    <div class="footerTitle">About Us</div>
+                    <ul class="footerList">
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="story.html#faq">Sustainability</a></li>
+                        <li><a href="story.html#statement">Interviews</a></li>
+                    </ul>
+                </div>
+                <div id="footerNav4">
+                    <div class="footerTitle">References</div>
                     <ul class="footerList">
                         <li><a href="references.html#worksCited">Works Cited</a></li>
                         <li><a href="references.html#planOfWork">Plan of Work Log</a></li>
                         <li><a href="references.html#copyrightChecklist">Student Copyright Checklist</a></li>
+                        <li><a href="references.html#photo">Video Consent and Release Form</a></li>
                     </ul>
                 </div>
             </div>

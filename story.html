@@ -34,7 +34,7 @@
     <div id="navBtm">
         <div class="nameLogo"><a href="index.html"><img class="img" src="images/vihrealogo-removebg-preview.png"></a></div>
         <div class="navBlocks">
-            <div><a href="references.html">REFERENCES</a></div>
+            <div><a href="references.html">REFERENCE PAGE</a></div>
             <div><a href="story.html">OUR STORY</a></div>
             <div><a href="catering.html">CATERING</a></div>
             <div><a href="reservations.html">RESERVATIONS</a></div>
@@ -55,7 +55,7 @@
         <div class="storyFloatText">
             <p class="storyFloatTitle">THE JOURNEY BEGINS</p>
             <img class="separator" src="images/fancy.png">
-            <P class="floatText2">In 1971, Vihreä was founded in Helsinki, Finland by Jooseppi and Anja Korhonen. As a vegan couple, they made it their mission to provide more inclusive dining options for vegetarians and vegans alike.  The initial menu was very limited in its vegetarian options, only offering a few dishes inspired by Finnish culture.</P>
+            <P class="floatText2">In 1971, Vihreä was founded in Helsinki, Finland by Jooseppi and Anja Korhonen. As a vegan couple, they made it their mission to provide more inclusive dining options for vegetarians and vegans alike. The initial menu was very limited in its vegetarian options, only offering a few dishes inspired by Finnish culture.</P>
         </div>
     </div>
     <div>
@@ -73,7 +73,7 @@
         <div class="storyFloatText">
             <p class="storyFloatTitle">GROWTH</p>
             <img class="separator" src="images/fancy.png">
-            <P class="floatText2">Utilizing locally grown produce and seasonal ingredients provided fantastic flavor and the food quickly gained popularity from both locals and visitors. As the business grew, so did the menu, offering a taste for every palate. We started a carry-out service to meet demand for more convenient meals and a catering service for large venues. </P>
+            <P class="floatText2">Utilizing locally grown produce and seasonal ingredients created a unique flavor, and the food quickly gained popularity among both locals and tourists. As the business expanded, so did the menu, offering a taste for every palate. We started a carry-out service to meet the demand for more convenient meals and a catering service for large venues, and eventually opened new locations in new countries.  </P>
         </div>
     </div>
     <div>
@@ -91,15 +91,14 @@
         <div class="storyFloatText">
             <p class="storyFloatTitle">COMMUNITY SUPPORT</p>
             <img class="separator" src="images/fancy.png">
-            <P class="floatText2"> Vihreä was a pioneer not only in menu options, but also in sustainability. From supporting local farmers, to innovative zero waste practices, we never forgot our commitment to sustainability.</p>
+            <P class="floatText2">Vihreä was a pioneer not only in menu options, but also in sustainability. From supporting local farmers to innovative zero-waste practices, we have always kept our commitment to sustainability at the heart of our business.</p>
         </div>
     </div>
 </div>
 
-<div class="parallax2"></div>
 
-<div class="descriptionBox5">
-    <img src="images/jonathan-kemper-oHCalaoeD0Q-unsplash.jpg" class="img">
+<div class="descriptionBox5" id="faq">
+    <img src="images/jonathan-kemper-oHCalaoeD0Q-unsplash.jpg" class="img" style="filter: brightness(70%);">
     <div class="descriptionFloat5">
         <p class="floatTitle" style="padding-bottom: .75em;">THE VIHREÄ APPROACH</p>
         <p class="floatSubtitle5">Farm to Table</p>
@@ -111,3 +110,104 @@
     </div>
 </div>
 
+
+<div class="descriptionBox5" id="statement">
+    <img src="images/frances-gunn-QcBAZ7VREHQ-unsplash.jpg" class="img" style="filter: brightness(70%);">
+    <div class="descriptionFloat5">
+        <p class="floatTitle" style="padding-bottom: .75em;">INTRODUCING OUR INTERVIEW SERIES</p>
+        <p class="floatSubtitle5">What makes vihreä <span style="font-style: italic">vihreä</span>?</p>
+        <P class="floatText5">Starting 2025, we're producing a brand new interview series with our restaurants, farmers, and staff. This January, we're excited to bring you a closer look into Breezy Acres Farm in Pennsylvania. Follow Alex Hoffman as he brings us on a tour!</P>
+    <iframe style="margin-top: 2em;" width="560" height="315" src="https://www.youtube.com/embed/0QA9mJJhIUk?si=XzWF3ZHf43GGLF-9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+</div>
+
+
+<div class="newsletter">
+    <div class="foregroundBox">
+        <div class="foregroundTitle">Join Our Mailing List!</div>
+        <div class="foregroundDesc">
+            Get notified of the best deals and events.
+        </div>
+        <form class="newsletterForm">
+            <input type="text" name="name" placeholder="Full Name" required id="newsletterName"><br>
+            <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
+            <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
+        </form>
+    </div>
+</div>
+
+<div id="newsletterOverlay" class="greyOverlay hidden" onclick="closeModal()"></div>
+<div id="newsletterModal" class="newsletterModal hidden">
+    <div class="modalMessage">
+        <p class="storyFloatTitle">SUCCESS!</p>
+        <img class="separator" style="padding-top: .5em; padding-bottom: 0.5em" src="images/fancy.png">
+        <p>Thank you for joining! You'll be the first to know about the best deals, new events, and more!</p>
+        <p style="padding-top: 1em; font-style: italic;">Press anywhere to close.</p>
+    </div>
+</div>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="animations.js"></script>
+<script src="webmaster.js"></script>
+
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerMain">
+            <div class="footerTop">
+                <div class="contact">
+                    <div class="footerLogo"><img class="img" style="filter: brightness(1000%)" src="images/vihrealogo-removebg-preview.png"></div>
+                    <div class="contactIcons">
+                        <div style="grid-column: 2 / 3;"><a href="https://x.com/vihrea_company" target="_blank"><img src="images/twitter3.png" width="20px"></a></div>
+                        <div><a href="https://youtube.com/@vihrea_company" target="_blank"><img src="images/youtube3-removebg-preview.png" width="20px"></a></div>
+                    </div>
+                </div>
+                <div class="mission">
+                    Our Mission: Here at vihreä, our mission is to be at the forefront of vegan and vegetarian cuisine, driving the global transition towards a sustainable and greener future. 
+                    We are dedicated to following innovative green solutions to meet the world's growing food needs while minimizing our global environmental impact.
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div id="footerNav1">
+                    <div class="footerTitle">Menus</div>
+                    <ul class="footerList">
+                        <li><a href="our-menus.html#brunch">Brunch</a></li>
+                        <li><a href="our-menus.html#lunch">Lunch</a></li>
+                        <li><a href="our-menus.html#dinner">Dinner</a></li>
+                        <li><a href="our-menus.html#dessert">Dessert</a></li>
+                    </ul>
+                </div>
+                <div id="footerNav2">
+                    <div class="footerTitle">Services</div>
+                    <ul class="footerList">
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                    </ul>
+                </div>
+                <div id="footerNav3">
+                    <div class="footerTitle">About Us</div>
+                    <ul class="footerList">
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="story.html#faq">Sustainability</a></li>
+                        <li><a href="story.html#statement">Interviews</a></li>
+                    </ul>
+                </div>
+                <div id="footerNav4">
+                    <div class="footerTitle">References</div>
+                    <ul class="footerList">
+                        <li><a href="references.html#worksCited">Works Cited</a></li>
+                        <li><a href="references.html#planOfWork">Plan of Work Log</a></li>
+                        <li><a href="references.html#copyrightChecklist">Student Copyright Checklist</a></li>
+                        <li><a href="references.html#photo">Video Consent and Release Form</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright © vihreä 2025 – Webmaster 2103-901</div>
+    </footer>
+
+</html>

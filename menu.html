@@ -13,8 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Space+Grotesk&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <script src="webmaster.js"></script>
 </head>
 
 <body>
@@ -34,7 +32,7 @@
     <div id="navBtm">
         <div class="nameLogo"><a href="index.html"><img class="img" src="images/vihrealogo-removebg-preview.png"></a></div>
         <div class="navBlocks">
-            <div><a href="references.html">REFERENCES</a></div>
+            <div><a href="references.html">REFERENCE PAGE</a></div>
             <div><a href="story.html">OUR STORY</a></div>
             <div><a href="catering.html">CATERING</a></div>
             <div><a href="reservations.html">RESERVATIONS</a></div>
@@ -60,6 +58,8 @@
         <p>
             Let vihreä take you on a journey. 
             From colorful salads to indulgent desserts, our menu offers a full array of plant-based goodness.
+            Each one of our dishes is a celebration of locally sourced ingredients and global culinary inspiration, 
+            combining traditional techniques with bold, modern flavors.
         </p>
     </div>
 </div>
@@ -84,8 +84,11 @@
 </div>
 
 <div class="filler"></div>
+<div class="filler"></div>
+<div class="filler"></div>
 
-<div class="infoBlurb">
+
+<!-- <div class="infoBlurb">
     <div style="grid-column: 1 / 3;">
         <p class="standardHeader">OUR DISHES</p>
         <p>
@@ -93,9 +96,9 @@
             combining traditional techniques with bold, modern flavors.
         </p>
     </div>
-</div>
+</div> -->
 
-<div class="menuArray">
+<!-- <div class="menuArray">
     <div class="menuBox" onclick="toVegetarian()" style="grid-column: 1 / 3">
         <img class="menuImg" src="images/food/salad-2756467_1920.jpg">
         <p>Vegetarian</p>
@@ -104,8 +107,94 @@
         <img class="menuImg" src="images/food/ella-olsson-2IxTgsgFi-s-unsplash.jpg">
         <p>Vegan</p>
     </div>
+</div> -->
+
+
+<div class="newsletter">
+    <div class="foregroundBox">
+        <div class="foregroundTitle">Join Our Mailing List!</div>
+        <div class="foregroundDesc">
+            Get notified of the best deals and events.
+        </div>
+        <form class="newsletterForm">
+            <input type="text" name="name" placeholder="Full Name" required id="newsletterName"><br>
+            <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
+            <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
+        </form>
+    </div>
 </div>
 
+<div id="newsletterOverlay" class="greyOverlay hidden" onclick="closeModal()"></div>
+<div id="newsletterModal" class="newsletterModal hidden">
+    <div class="modalMessage">
+        <p class="storyFloatTitle">SUCCESS!</p>
+        <img class="separator" style="padding-top: .5em; padding-bottom: 0.5em" src="images/fancy.png">
+        <p>Thank you for joining! You'll be the first to know about the best deals, new events, and more!</p>
+        <p style="padding-top: 1em; font-style: italic;">Press anywhere to close.</p>
+    </div>
+</div>
+
+
+</main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="animations.js"></script>
+<script src="webmaster.js"></script>
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerMain">
+            <div class="footerTop">
+                <div class="contact">
+                    <div class="footerLogo"><img class="img" style="filter: brightness(1000%)" src="images/vihrealogo-removebg-preview.png"></div>
+                    <div class="contactIcons">
+                        <div style="grid-column: 2 / 3;"><a href="https://x.com/vihrea_company" target="_blank"><img src="images/twitter3.png" width="20px"></a></div>
+                        <div><a href="https://youtube.com/@vihrea_company" target="_blank"><img src="images/youtube3-removebg-preview.png" width="20px"></a></div>
+                    </div>
+                </div>
+                <div class="mission">
+                    Our Mission: Here at vihreä, our mission is to be at the forefront of vegan and vegetarian cuisine, driving the global transition towards a sustainable and greener future. 
+                    We are dedicated to following innovative green solutions to meet the world's growing food needs while minimizing our global environmental impact.
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div id="footerNav1">
+                    <div class="footerTitle">Menus</div>
+                    <ul class="footerList">
+                        <li><a href="our-menus.html#brunch">Brunch</a></li>
+                        <li><a href="our-menus.html#lunch">Lunch</a></li>
+                        <li><a href="our-menus.html#dinner">Dinner</a></li>
+                        <li><a href="our-menus.html#dessert">Dessert</a></li>
+                    </ul>
+                </div>
+                <div id="footerNav2">
+                    <div class="footerTitle">Services</div>
+                    <ul class="footerList">
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                    </ul>
+                </div>
+                <div id="footerNav3">
+                    <div class="footerTitle">About Us</div>
+                    <ul class="footerList">
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="story.html#faq">Sustainability</a></li>
+                        <li><a href="story.html#statement">Interviews</a></li>
+                    </ul>
+                </div>
+                <div id="footerNav4">
+                    <div class="footerTitle">References</div>
+                    <ul class="footerList">
+                        <li><a href="references.html#worksCited">Works Cited</a></li>
+                        <li><a href="references.html#planOfWork">Plan of Work Log</a></li>
+                        <li><a href="references.html#copyrightChecklist">Student Copyright Checklist</a></li>
+                        <li><a href="references.html#photo">Video Consent and Release Form</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright © vihreä 2025 – Webmaster 2103-901</div>
+    </footer>
