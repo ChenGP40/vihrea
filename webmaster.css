@@ -224,7 +224,6 @@ p {
     background: black;
     height: 75vh;
     border-top: .5em solid rgb(142, 180, 78);
-    /* border-bottom: .5em solid #8EB44E; */
     position: relative;
 }
 .descriptionFloat {
@@ -379,50 +378,6 @@ p {
 
 
 
-
-
-.infoBoxDecor {
-    position: relative;
-    background-image: linear-gradient(135deg, #4df068, #006942);
-    padding: .5em;
-    margin: 0 18% -140px 18%;
-    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    z-index: 5;
-}
-.infoBox {
-    position: relative;
-    margin: 1em;
-    padding: 1.5em;
-    background-color: white;
-    z-index: 3;
-    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    text-align: center;
-    font-size: 125%;
-}
-.infoTitle, .mainTitle {
-    padding-bottom: .5em;
-    font-size: 150%;
-    font-weight: bold;
-    color: #006942;
-    text-decoration: underline 1px solid #006942;
-    text-underline-offset: .25em;
-}
-.reverseTriangleTransition {
-    position: static;
-    height: 3em;
-    margin-bottom: -3em;
-    background-color: white;
-    clip-path: polygon(100% 0, 100% 100%, 0 0);
-    z-index: 1;
-}
-.greenBackground {
-    background-image: url(images/green\ background.svg);
-    background-size: cover;
-}
-
-
 .button {
     grid-column: 1 / 4;
     width: 20%;
@@ -442,12 +397,6 @@ p {
 
 }
 
-.triangleTransition {
-    height: 3em;
-    margin-top: -3em;
-    background-color: white;
-    clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
-}
 
 /*** Newsletter Signup ***/
 .newsletter {
@@ -941,6 +890,141 @@ select {
 }
 .cursorWait:hover {
     cursor: wait;
+}
+
+
+/* Catering Page */
+.catering {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0em 10%; 
+    padding: 2em 0;
+    gap: 1em;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+.cateringTitle {
+    font-family: "Outfit", sans-serif;
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: .5em;
+}
+.catering > div:nth-child(2) {
+    border-left: #D9AF52 3px solid;
+    border-right: #D9AF52 3px solid;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+.cateringFloat {
+    margin: 0em 25%; 
+    padding: 2em 0;
+    text-align: center;
+}
+
+/* Our Story */
+.parallax {
+    background-image: url("images/guillaume-henrotte-bNOh-Y-ECSg-unsplash.jpg");
+    height: 100vh;
+    margin-top: -3.5em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+}
+.parallax2 {
+    background-image: url("images/guillaume-henrotte-bNOh-Y-ECSg-unsplash.jpg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+}
+.storyTitle {
+    color: white;
+    font-size: 1000%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.storyBox {
+    background: rgba(255, 255, 255, 0.6);
+    height: 75vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.storyFloat {
+    z-index: 2;
+    height: 100%;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+.storyFloatText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.storyFloatTitle {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+}
+.floatText2 {
+    font-style: italic;
+    padding-top: 1em;
+}
+
+.descriptionBox5 {
+    background: black;
+    height: 100vh;
+    border-top: .5em solid rgb(142, 180, 78);
+    border-bottom: .5em solid rgb(142, 180, 78);
+
+    position: relative;
+}
+.descriptionFloat5 {
+    background: rgba(255, 255, 255, 0.959);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 75%;
+    width: 70%;
+    outline: rgba(255, 255, 255, 0.85) 1em solid;
+    border: #D9AF52 2px solid;
+    text-align: center;
+}
+.floatSubtitle5 {
+    font-family: "Outfit", sans-serif;
+    font-size: 120%;
+    padding-top: 0.5em;
+}
+.floatText5 {
+    font-style: italic;
+    padding: 0.5em 2.5em;
+}
+
+
+    
+#LHimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#RHimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
