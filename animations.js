@@ -8,6 +8,13 @@ gsap.from(".SolutionArray2", {y:200, opacity:0, duration: 1, ease: "power3.inOut
 gsap.from(".infoBox5", {y:200, duration: 1, scrollTrigger: ".infoBox5", ease: "power3.inOut" });
 gsap.from(".infoBox2", {opacity:0, duration: 1, scrollTrigger: ".infoBox2", ease: "power3.inOut" });
 
+gsap.from(".descriptionFloat", {opacity:0, duration: 1, scrollTrigger: ".descriptionFloat2", ease: "power3.inOut" });
+gsap.from(".floatBtn2", {x:200,opacity:0, duration: 1, scrollTrigger: ".descriptionFloat3", ease: "power3.In" });
+gsap.from(".floatBtn3", {x:-200,opacity:0, duration: 1, scrollTrigger: ".descriptionFloat3", ease: "power3.In" });
+gsap.from(".descriptionFloat3", {y:200,opacity:0, duration: 1, scrollTrigger: "div.foregroundBox", ease: "power3.inOut" });
+gsap.from(".descriptionFloat4", {y:200,opacity:0, duration: 1, scrollTrigger: "div.foregroundBox", ease: "power3.inOut" });
+gsap.from(".menuImg", {y:-200,opacity:0,stagger:.75, duration: .25, scrollTrigger: ".infoBlurb", ease: "power3.inOut" });
+
 function modalAnimation(){
     gsap.from(".newsletterModal", {scale:0, duration: 2, ease: "back.out" });
 }
