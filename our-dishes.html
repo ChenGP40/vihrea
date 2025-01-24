@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Dishes | vihreä</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="webmaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header id="scrollHeader" class="" >
+<nav>
+    <div id="navTop">
+        <div class="mediaLogos">
+            <div><a href="https://x.com/vihrea_company" target="_blank"><img class="logo" src="images/twitter3.png"></a></div>
+            <div><a href="https://youtube.com/@vihrea_company" target="_blank"><img class="logo" src="images/youtube3-removebg-preview.png"></a></div>
+        </div>
+        <div class="navLinks">
+            <div><a href="locations.html">Choose Location</a></div>
+            <div style="color: #8EB44E">|</div>
+            <div><a href="login.html">Account</a></div>
+        </div>
+    </div>
+    <div id="navBtm">
+        <div class="nameLogo"><a href="index.html"><img class="img" src="images/vihrealogo-removebg-preview.png"></a></div>
+        <div class="navBlocks">
+            <div><a href="references.html">REFERENCES</a></div>
+            <div><a href="story.html">OUR STORY</a></div>
+            <div><a href="catering.html">CATERING</a></div>
+            <div><a href="reservations.html">RESERVATIONS</a></div>
+            <div><a href="locations.html">LOCATIONS</a></div>
+            <div><a href="menu.html">MENU</a></div>
+        </div>
+    </div>
+</nav>
+</header>
+
+<div class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/serge-esteve-klXhDG8Roj4-unsplash.jpg); 
+    clip-path: none">
+    <div class="headerBox">
+        <div class="headerTitle">OUR DISHES</div>
+        <div class="headerSubtitle">Be Blown Away</div>
+    </div>
+</div>
+
+<div class="collapsible">Prerequisites:</div>
+<div class="content">
+    <p style="padding-top: 1em; padding-bottom: 1em">Factors such as geology, hydrology, and land availability should be considered before installing a geothermal heater. 
+        Soil type, rock type, how deep water is beneath the ground, infrastructure of the area, and etcetera will heavily determine the cost and system available in your location. 
+        Depending on these variables, different types of systems and pumps could be considered until the best match is found for you. 
+    </p>
+</div>
+
+<script>
+    var collapse = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < collapse.length; i++) {
+    collapse[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        } 
+    });
+    }
+</script>

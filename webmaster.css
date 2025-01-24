@@ -223,7 +223,7 @@ p {
 .descriptionBox {
     background: black;
     height: 75vh;
-    border-top: .5em solid #8EB44E;
+    border-top: .5em solid rgb(142, 180, 78);
     /* border-bottom: .5em solid #8EB44E; */
     position: relative;
 }
@@ -234,8 +234,8 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    height: 30em;
-    width: 27em;
+    height: 75%;
+    width: 30%;
     outline: rgba(255, 255, 255, 0.85) 1em solid;
     border: #D9AF52 2px solid;
     text-align: center;
@@ -352,8 +352,8 @@ p {
     left: 25%;
     transform: translate(-25%, -50%);
     z-index: 2;
-    height: 30em;
-    width: 27em;
+    height: 75%;
+    width: 30%;
     outline: rgba(255, 255, 255, 0.85) 1em solid;
     border: #D9AF52 2px solid;
     text-align: center;
@@ -365,8 +365,8 @@ p {
     left: 75%;
     transform: translate(-75%, -50%);
     z-index: 2;
-    height: 30em;
-    width: 27em;
+    height: 75%;
+    width: 30%;
     outline: rgba(255, 255, 255, 0.85) 1em solid;
     border: #D9AF52 2px solid;
     text-align: center;
@@ -421,14 +421,6 @@ p {
     background-image: url(images/green\ background.svg);
     background-size: cover;
 }
-.logo {
-    background-image: linear-gradient(45deg, #4df068, #006942);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    font-weight: bold;
-}
 
 
 .button {
@@ -458,18 +450,15 @@ p {
 }
 
 /*** Newsletter Signup ***/
-.foregroundBox {
-    position: relative;
-    margin: 3em 20% 0em 20%;
-    padding: 1em;
-    background-color:#006942;
-    z-index: 3;
-    box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    text-align: center;
-    font-size: 125%;
-    color: white;
+.newsletter {
+    background-color: #F6F6F1;
 }
+.foregroundBox {
+    padding: 1.5em;
+    border: solid 2px rgb(238, 238, 238);
+    transition-duration: .5s;
+}
+
 .foregroundTitle {
     font-size: 200%;
     font-weight: 600;
@@ -481,10 +470,10 @@ p {
 }
 
 /* Form*/
-input {
+/* input {
     font-family: "League Spartan", sans-serif;
     font-size: 90%;
-}
+} */
 #newsletterEmail, #newsletterName {
     margin-top: 1em;
     margin-left: .25em;
@@ -556,7 +545,7 @@ input {
 .headerTitle {
     color:white;
     font-size: 300%;
-    padding-bottom: .25em;
+    /* padding-bottom: .25em; */
     font-weight: 600;
     text-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
@@ -565,6 +554,21 @@ input {
     font-size: 250%;
     text-shadow: 0px 0px 10px rgba(0,0,0,.6);
 }
+.menuChange {
+    display: inline-block;
+    margin: 1.25em 1em 0;
+    font-size: 100%;
+}
+.highlightedMenu {
+    text-decoration: #D9AF52 underline 1px;
+    text-underline-offset: .25em;
+}
+.actualMenu {
+    background: yellow;
+    color: black;
+    display: grid;
+}
+
 
 
 /***** Menu Page *****/
@@ -612,19 +616,11 @@ input {
     box-shadow: 0px 4px 20px 4px rgba(0,0,0,0.5);
     cursor: pointer;
 }
-.tripImg {
+.menuImg {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
-/* #tripImg1 > img {
-    transform: translate(-35%, -22%);
-}
-#tripImg2 > img {
-    transform: translate(-34%, -49%);
-}
-#tripImg3 > img {
-    transform: translate(-22%, -36%);
-} */
 
 .SolutionArray2 {
     display: grid;
@@ -820,7 +816,7 @@ input {
     font-family: "Space Grotesk", sans-serif;
     font-size: 150%;
     font-weight: bold;
-    text-decoration: underline red 2px;
+    text-decoration: underline #D9AF52 2px;
     text-underline-offset: 10px;
     padding-bottom: 1em;
 }
@@ -859,22 +855,103 @@ input {
 .individualState {
     margin-top: 1em;
 }
+
+
+/* Reservations */
 .reserve {
     background-color: #F6F6F1;
-    padding: 3em;
+    /* padding: 3em; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 0em 15%;
+    font-size: 100%;
+    font-family: "Outfit", sans-serif;
+    font-style: italic;
+    justify-content: center;
+    /* line-height: 20px; */
 }
+.reserve > div {
+    display: inline-block;
+    position: relative;
+}
+select {
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    padding: 0px 7.5px;
+    font-style: italic;
+}
+.time {
+    margin-top: 10px;
+    height:36px;
+    width: 90%;
+    padding: 0px 7.5px;
+    font-style: italic;
+}
+.reserveBtn {
+    display: block;
+    width: 75%;
+    background: #D9AF52;
+    color: black;
+    margin: auto;
+    padding: .75em;
+    text-align: center;
+    transition: .25s;
+    position: absolute; 
+    bottom: 0;
+    margin-left: 10%;
+}
+.reserveBtn:hover, .reserveFormBtn:hover {
+    transform: scale(1.05);
+    outline: .25px solid black;
+    cursor: pointer;
+    color: black;
+}
+.reservationForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4em 30%;
+    gap: 2em 4em;
+    font-style: italic;
+}
+.reserveForm {
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    padding: 0px 7.5px;
+    font-style: italic;
+}
+.reserveFormBtn {
+    width: 50%;
+    background: #D9AF52;
+    color: black;
+    margin: auto;
+    padding: 1em;
+    border: none;
+    font-style: italic;
+    font-size: 100%;
+    transition: .25s;
+}
+.hidden {
+    display: none;
+}
+.cursorWait {
+    cursor: wait;
+}
+.cursorWait:hover {
+    cursor: wait;
+}
+
 
 /***** Footer *****/
 footer {
     position: relative;
     font-family: "League Spartan", sans-serif;
-    /* background: #8EB44E; */
-    background-color: white;
-    z-index: 0;
+    background-color: #F6F6F1;
 }
 .footerContainer {
     position: relative;
-    z-index: 1;
     box-shadow: 0px 16px 16px -12px rgba(0,0,0,0.5);
 }
 
@@ -892,15 +969,10 @@ footer {
     grid-template-rows: 75% 25%;
 }
 .footerLogo {
-    background-image: linear-gradient(45deg, #4df068, #006942);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    font-size: 500%;
-    font-weight: bold;
     display: grid;
-    place-items: center;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 1.5em;
 }
 .contactIcons {
     display: grid;
@@ -957,14 +1029,14 @@ footer {
 }
 
 /**/
-.show {
+/* .show {
     display: block;
     opacity: 100%;
 }
 .hidden {
     display: none;
     opacity: 0%;
-}
+} */
 
 /* Keyframes */
 .reveal {

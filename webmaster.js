@@ -96,27 +96,115 @@ if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
 }
 }
 
+function toBrunch() {
+    location.href="our-menus.html#brunch";
+    location.reload;
+}
 function toLunch() {
-    location.href="menus/lunch.html";
+    location.href="our-menus.html#lunch";
     location.reload;
 }
 function toDinner() {
-    location.href="menus/dinner.html";
-    location.reload;
-}
-function toBrunch() {
-    location.href="menus/brunch.html";
+    location.href="our-menus.html#dinner";
     location.reload;
 }
 function toDessert() {
-    location.href="menus/dessert.html";
+    location.href="our-menus.html#dessert";
     location.reload;
 }
 function toVegetarian() {
-    location.href="menus/vegetarian.html";
+    location.href="our-dishes.html#vegetarian";
     location.reload;
 }
 function toVegan() {
-    location.href="menus/vegan.html";
+    location.href="our-dishes.html#vegan";
     location.reload;
 }
+
+// Changing between subpages (side navigation)
+const brunch = document.getElementById("brunch");
+const lunch = document.getElementById("lunch");
+const dinner = document.getElementById("dinner");
+const dessert = document.getElementById("dessert");
+
+const brunchTop = document.getElementById("brunchTrigger");
+const lunchTop = document.getElementById("lunchTrigger");
+const dinnerTop = document.getElementById("dinnerTrigger");
+const dessertTop = document.getElementById("dessertTrigger");
+
+const body = document.getElementById("body");
+const cursorChange = document.getElementById("cursorChange");
+const reservationForm = document.getElementById("reservationForm");
+
+let allClasses = [brunch, lunch, dinner, dessert];
+let allClasses2 = [brunchTop, lunchTop, dinnerTop, dessertTop];
+
+var submitHash = ""
+
+function hideAll() {
+allClasses.forEach(function(el) {
+    el.classList.add("hidden");
+})
+allClasses2.forEach(function(el) {
+    el.classList.remove("highlightedMenu");
+})
+}
+
+document.getElementById("brunchTrigger").addEventListener("click", () => {hideAll(); triggerBrunch();})
+function triggerBrunch() {
+    brunch.classList.remove("hidden");
+    brunchTop.classList.add("highlightedMenu");
+    window.location.hash = "#brunch"
+}
+document.getElementById("lunchTrigger").addEventListener("click", () => {hideAll(); triggerLunch();})
+function triggerLunch() {
+    lunch.classList.remove("hidden");
+    lunchTop.classList.add("highlightedMenu");
+    window.location.hash = "#lunch"
+}
+document.getElementById("dinnerTrigger").addEventListener("click", () => {hideAll(); triggerDinner();})
+function triggerDinner() {
+    dinner.classList.remove("hidden");
+    dinnerTop.classList.add("highlightedMenu");
+    window.location.hash = "#dinner"
+}
+document.getElementById("dessertTrigger").addEventListener("click", () => {hideAll(); triggerDessert();})
+function triggerDessert() {
+    dessert.classList.remove("hidden");
+    dessertTop.classList.add("highlightedMenu");
+    window.location.hash = "#dessert"
+}
+
+window.addEventListener("load", () => {subpageChanger();})
+function subpageChanger() {
+    let hash = window.location.hash;
+    if(hash == "") {
+        triggerBrunch();
+    } else if(hash == "#brunch") {
+        triggerBrunch();
+    } else if(hash == "#lunch") {
+        triggerLunch();
+    } else if(hash == "#dinner") {
+        triggerDinner();
+    } else {
+        triggerDessert();
+    } 
+}
+
+
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function loadNextForm() {
+    body.classList.add("cursorWait");
+    cursorChange.classList.add("cursorWait");
+    await delay(3000);
+    reservationForm.classList.remove("hidden");
+    body.classList.remove("cursorWait");
+    cursorChange.classList.remove("cursorWait");
+}
+
+
+

@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | vihreä</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="webmaster.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,10 +22,8 @@
 <nav>
     <div id="navTop">
         <div class="mediaLogos">
-            <div><a href="https://x.com/vihrea_company" target="_blank"><img class="logo" src="images/twitter.png"></a></div>
-            <div><a href="https://twitter.com/zelenacompany" target="_blank"><img class="logo" src="images/instagram.png"></a></div>
-            <div><a href="https://twitter.com/zelenacompany" target="_blank"><img class="logo" src="images/facebook.png"></a></div>
-            <div><a href="https://twitter.com/zelenacompany" target="_blank"><img class="logo" src="images/youtube.png"></a></div>
+            <div><a href="https://x.com/vihrea_company" target="_blank"><img class="logo" src="images/twitter3.png"></a></div>
+            <div><a href="https://youtube.com/@vihrea_company" target="_blank"><img class="logo" src="images/youtube3-removebg-preview.png"></a></div>
         </div>
         <div class="navLinks">
             <div><a href="locations.html">Choose Location</a></div>
@@ -69,10 +68,11 @@
 <div class="descriptionBox">
     <img src="images/restaurant-2623071_1280.jpg" class="img">
     <div class="descriptionFloat">
-        <p class="floatTitle">FRESH FRESHNESS</p>
+        <p class="floatTitle">MINDFUL DINING</p>
         <p class="floatSubtitle">A CULINARY EXPERIENCE</p>
         <img class="separator" src="images/fancy.png">
-        <P class="floatText">Take a look at our menu thats full of good green stuff yeah eayh yeahhhhh</P>
+        <P class="floatText">Explore our vibrant menu, filled with fresh, flavorful dishes made from locally sourced ingredients. 
+            Whether you're an experienced vegan or new to plant-based dining, there's something here for everyone to enjoy!</P>
         <a class="floatBtn" href="menu.html">Menu</a>
     </div>
 </div>
@@ -98,37 +98,33 @@
     <img src="images/dan-meyers-IQVFVH0ajag-unsplash.jpg" class="img" style="filter: brightness(80%);">
     <!-- <img src="images/ivan-stern-LOLSb7m6XkU-unsplash.jpg" class="floatImg2"> -->
     <div class="descriptionFloat3">
-        <p class="floatTitle">OUR STORY</p>
+        <p class="floatTitle">ABOUT VIHREÄ</p>
         <p class="floatSubtitle">A FIGHT FOR SUSTAINABILITY</p>
         <img class="separator" src="images/fancy.png">
-        <P class="floatText">Take a look at our menu thats full of good green stuff yeah eayh yeahhhhh</P>
-        <a class="floatBtn" href="menu.html">Menu</a>
+        <P class="floatText">Sourced from local farmers, our ingredients are guaranteed to be fresh and preservative-free.</P>
+        <a class="floatBtn" href="menu.html">Our Story</a>
     </div>
     <div class="descriptionFloat4">
-        <p class="floatTitle">EXCLUSIVE INTERVIEWS</p>
+        <p class="floatTitle">EXCLUSIVE INTERVIEW</p>
         <p class="floatSubtitle">ANOTHER LOOK</p>
         <img class="separator" src="images/fancy.png">
-        <P class="floatText">Take a look at our menu thats full of good green stuff yeah eayh yeahhhhh</P>
+        <P class="floatText">Check out an exclusive interview with Alex Hoffman, a Pennsylvania farmer from Breezy Acres Farm!</P>
         <a class="floatBtn" href="https://youtu.be/0QA9mJJhIUk" target="_blank">Watch on YouTube <img src="images/new-tab.png" style="max-width: 12px"></a>
     </div>
 </div>
 
-
-
-
-
-
-<div class="foregroundBox">
-    <div class="foregroundTitle">Join Our Email List!</div>
-    <div class="foregroundDesc">
-        Get notified of changes when they happen.
+<div class="newsletter">
+    <div class="foregroundBox">
+        <div class="foregroundTitle">Join Our Email List!</div>
+        <div class="foregroundDesc">
+            Get notified of changes when they happen.
+        </div>
+        <form class="newsletterForm">
+            <input type="text" name="name" placeholder="Full Name" required id="newsletterName">
+            <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
+            <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
+        </form>
     </div>
-    <form class="newsletterForm">
-        <input type="text" name="name" placeholder="Full Name" required id="newsletterName">
-        <input type="text" name="email" placeholder="Email" required id="newsletterEmail"><br>
-        <input type="button" value="Sign Me Up!" class="formBtn" onclick="modalPopup()"></submit>
-    </form>
-</div>
 
 <div id="newsletterOverlay" class="greyOverlay hidden" onclick="closeModal()"></div>
 <div id="newsletterModal" class="newsletterModal hidden">
@@ -138,6 +134,7 @@
         <p>Press anywhere to close.</p>
     </div>
 </div>
+
 
 </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -150,7 +147,7 @@
         <div class="footerMain">
             <div class="footerTop">
                 <div class="contact">
-                    <div class="footerLogo">zelená</div>
+                    <div class="footerLogo"><img class="img" style="filter: brightness(200%)" src="images/vihrealogo-removebg-preview.png"></div>
                     <div class="contactIcons">
                         <div><a href="https://twitter.com/zelenacompany" target="_blank"><img src="images/twitter.png" width="20px"></a></div>
                         <div><a href="https://www.instagram.com/zelenacompany/" target="_blank"><img src="images/instagram.png" width="20px"></a></div>
