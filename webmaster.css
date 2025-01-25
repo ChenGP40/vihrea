@@ -1207,61 +1207,195 @@ footer {
         }
       }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1536px) {
 
+.floatTitle {
+    font-size: 160%;
+    padding-top: 1.5em;
 }
-
-@media screen and (max-width: 1007px) {
-.mission { 
-    padding-left: 4em;
+.floatText {
+    padding: .75em 2.5em;
+    font-size: 100%;
 }
-.infoBox2 {
-    transform: translateY(-87%);
-}
-.greenBackground2 {
-    margin-top: 6em;
-}
-.subHeader {
-    padding-bottom: 2em;
-}
-.infoBoxDecor3 {
-    padding: 1em;
-    padding-top: 1em;
-    grid-template-columns: 1fr;
-}
-.infoBox3 {
-    margin: 1em;
-    padding: 1.5em;
-    background-color: white;
-}
-.subpageImg {
+.storyBox {
+    background: rgba(255, 255, 255, 0.6);
+    height: 75vh;
+    position: relative;
     display: grid;
-    margin-bottom: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.subpageImg > img {
-    width: 75%;
-    margin: 0em 0;
+.storyFloatText {
+    position: relative;
+    padding: 3em;
+}    
+.descriptionBox5 {
+    background: black;
+    height: 100vh;
+    border-bottom: .5em solid rgb(142, 180, 78);
+    position: relative;
+}
+.descriptionFloat5 {
+    font-size: 90%;
+}
+.floatText5 {
+    font-style: italic;
+    padding: 0.5em 2.5em;
+    font-size: 115%;
 }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1366px) {
+
+.floatTitle {
+    font-size: 160%;
+    padding-top: 1.5em;
+}
+.floatSubtitle {
+    font-size: 100%;
+}
+.separator {
+    padding-top: .75em;
+}
+.floatText {
+    padding: .75em 2.5em;
+    font-size: 95%;
+}
+
 .mission { 
-    padding-left: 5em;
+    font-size: 95%;
 }
 
-.SolutionArray {
-    grid-template-columns: 1fr;
+.storyTitle {
+    font-size: 700%;
 }
-.SolutionArray2 {
-    grid-template-columns: 1fr;
-    margin: 0;
+
+.storyBox {
+    background: rgba(255, 255, 255, 0.6);
+    height: 75vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.infoBox2 {
-    transform: translateY(-87%);
+.storyFloatText {
+    position: relative;
+    padding: 3em;
 }
-.greenBackground2 {
-    margin-top: 3em;
-    height: 20em;
+
+.descriptionBox5 {
+    background: black;
+    height: 100vh;
+    border-bottom: .5em solid rgb(142, 180, 78);
+    position: relative;
+}
+.descriptionFloat5 {
+    font-size: 70%;
+}
+.floatSubtitle5 {
+    font-size: 130%;
+}
+.floatText5 {
+    font-style: italic;
+    padding: 0.5em 2.5em;
+    font-size: 120%;
+}
+.aaaaa {
+    font-size: 200%;
+}
+.mission {
+    font-size: 85%;
+}
+.footerList {
+    font-size: 85%;
+}
+.copyright {
+    font-size: 90%;
+}
+}
+
+@media screen and (max-width: 1280px) {
+.floatTitle {
+    font-size: 160%;
+    padding-top: 1.5em;
+}
+.floatSubtitle {
+    font-size: 95%;
+}
+.floatText {
+    padding: .75em 2.5em;
+    font-size: 90%;
+}
+.floatBtn { 
+    bottom: 2em;
+
+}
+.descriptionFloat5 {
+    font-size: 80%;
+}
+.floatSubtitle5 {
+    font-size: 130%;
+}
+.floatText5 {
+    font-style: italic;
+    padding: 0.5em 2.5em;
+    font-size: 105%;
+}
+}
+
+@media screen and (max-width: 1150px) {
+.landingText {
+    padding: 2em;
+}
+}
+
+/* TABLETS */
+@media screen and (max-width: 950px) {
+.landing {
+    background: black;
+    height: 25vh;
+    margin-top: -5.9em;
+    position: relative;
+}
+
+
+.imageContainer {
+    background: black;
+    display: grid;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+}
+
+.landingOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 1;
+}
+.landingText {
+    font-size: 200%;
+    padding: 1em;
+}
+.landingTitle {
+    padding-bottom: 0em;
+    padding-top: 2em;
+
+}
+.landingBtn {
+    display: none;
+}
+.aaa {
+    display: none;
+}
+
+.descriptionBox {
+    height: 50vh;
+}
+.descriptionBox2 {
+    height: 50vh;
 }
 }
 
