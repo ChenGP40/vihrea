@@ -52,15 +52,35 @@ function modalTrigger() {
     modalAnimation();
     disableScroll();
 }
+function mobileTrigger() {
+    let nice = document.getElementById("mobileModal");
+    let overlay = document.getElementById("newsletterOverlay");
+    nice.classList.add("show");
+    overlay.classList.add("show");
+    nice.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    modalAnimation();
+    disableScroll();
+}
 function closeModal() {
     let modal = document.getElementById("newsletterModal");
+    let nice = document.getElementById("mobileModal");
     let overlay = document.getElementById("newsletterOverlay");
     modal.classList.remove("show");
+    nice.classList.remove("show");
     overlay.classList.remove("show");
     modal.classList.add("hidden");
+    nice.classList.add("hidden");
     overlay.classList.add("hidden");
     enableScroll();
 }
+// function closeModal() {
+//     let overlay = document.getElementById("newsletterOverlay");
+//     modal.classList.remove("show");
+//     overlay.classList.remove("show");
+//     overlay.classList.add("hidden");
+//     enableScroll();
+// }
 function disableScroll() {
     document.body.classList.
     add("ScrollLock");

@@ -33,6 +33,7 @@
     <div id="navBtm">
         <div class="nameLogo"><a href="index.html"><img class="img" src="images/vihrealogo-removebg-preview.png"></a></div>
         <div class="navBlocks">
+            <p id="hamburger" onclick="mobileTrigger()"><img src="images/hamburger.png" class="img"></p>
             <div><a href="references.html">REFERENCE PAGE</a></div>
             <div><a href="story.html">OUR STORY</a></div>
             <div><a href="catering.html">CATERING</a></div>
@@ -43,6 +44,20 @@
     </div>
 </nav>
 </header>
+
+<div id="mobileModal" class="mobileModal hidden">
+    <div class="modalMessage">
+        <p class="storyFloatTitle">Navigation</p>
+        <img class="separator" style="padding-top: .5em; padding-bottom: 0.5em" src="images/fancy.png">
+        <div><a class="black" href="menu.html">MENU</a></div>
+        <div><a class="black" href="locations.html">LOCATIONS</a></div>
+        <div><a class="black" href="reservations.html">RESERVATIONS</a></div>
+        <div><a class="black" href="catering.html">CATERING</a></div>
+        <div><a class="black" href="story.html">OUR STORY</a></div>
+        <div><a class="black" href="references.html">REFERENCE PAGE</a></div>
+        <p style="padding-top: 1em; font-style: italic;">Press anywhere to close.</p>
+    </div>
+</div>
 
 <div class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/serge-esteve-klXhDG8Roj4-unsplash.jpg); 
     clip-path: none">

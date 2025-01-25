@@ -17,6 +17,21 @@ a:hover {
     text-decoration: underline 1px solid #D9AF52;
     color: #D9AF52;
 }
+.HIDE {
+    display: none;
+}
+
+.contact3 {
+    border: 3px solid #D9AF52; 
+    margin: 0 20%; 
+    margin-bottom: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.contact2 {
+    /* padding-top: 1em;  */
+    text-align: center;
+}
 
 /*Icons*/
 .material-symbols-outlined {
@@ -115,7 +130,10 @@ a {
     float: right;
     margin: 1.25em 1em;
 }
-.navBlocks > div:first-child {
+/* .navBlocks > div:first-child {
+    margin-right: 4em;
+} */
+.navBlocks > div:nth-child(2) {
     margin-right: 4em;
 }
 
@@ -123,6 +141,10 @@ p {
     font-family: "Outfit";
     font-size: 18px;
     line-height: 1.5em;
+}
+
+#hamburger {
+    display: none;
 }
 
 /***** Home Page *****/
@@ -468,6 +490,36 @@ p {
     border: #D9AF52 2px solid;
     text-align: center;
     padding: 3em;
+}
+.mobileModal {
+    display: block;
+    position: fixed;
+    z-index: 20;
+    width: 30%;
+    height: fit-content;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    font-family: "Outfit", sans-serif;
+    align-items: center;
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    outline: rgba(255, 255, 255, 0.85) 1em solid;
+    border: #D9AF52 2px solid;
+    text-align: center;
+    padding: 3em;
+}
+.modalMessage > div {
+    margin: 0.5em;
+}
+.black {
+    color: black;
+}
+.black:hover {
+    color: #D9AF52;
 }
 .greyOverlay {
     display: block;
@@ -1339,6 +1391,10 @@ footer {
     padding: 0.5em 2.5em;
     font-size: 105%;
 }
+.locationBig {
+    grid-column: 1 / 3;
+    text-align: center;
+}
 }
 
 @media screen and (max-width: 1150px) {
@@ -1351,11 +1407,9 @@ footer {
 @media screen and (max-width: 950px) {
 .landing {
     background: black;
-    height: 25vh;
     margin-top: -5.9em;
     position: relative;
 }
-
 
 .imageContainer {
     background: black;
@@ -1380,26 +1434,322 @@ footer {
     padding: 1em;
 }
 .landingTitle {
-    padding-bottom: 0em;
+    padding-bottom: 1em;
     padding-top: 2em;
 
 }
-.landingBtn {
-    display: none;
+.homeImg {
+    overflow: hidden;
+    clip-path: polygon(2.5% 0, 97.5% 0%, 97.5% 100%, 2.5% 100%);   
 }
 .aaa {
     display: none;
 }
 
+.navBlocks > div {
+    display: none;
+}
+header {
+    background: rgba(0, 0, 0, .9);
+}
+.nameLogo {
+    height: 2em;
+    padding-top: .9em;
+    padding-bottom: .9em;
+}
+
+#hamburger {
+    display: block;
+    float: right;
+    padding-top: .75em;
+    margin-right: 3.5em;
+    height: 2em;
+    filter:brightness(3000%)
+}
+
+.floatTitle {
+    font-size: 140%;
+    padding-top: 1.5em;
+}
+.descriptionFloat3 {
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+.descriptionFloat4 {
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+}
+.footerMain {
+    margin: 0 10%;
+}
+.footerList > li {
+    padding-top: .75em;
+}
+
+.storyTitle {
+    font-size: 500%;
+}
+.storyBox {
+    background: rgba(255, 255, 255, 0.6);
+    height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.storyFloatText {
+    padding: 3em;
+}    
+.floatText2 {
+    font-size: 95%;
+}
 .descriptionBox {
     height: 50vh;
 }
 .descriptionBox2 {
     height: 50vh;
 }
+.descriptionBox5 {
+    height: 130vh;
+}
+.descriptionFloat5 {
+    font-size: 120%;
+}
+.floatSubtitle5 {
+    font-size: 150%;
+}
+.floatText5 {
+    font-style: italic;
+    padding: 0.5em 2.5em;
+    font-size: 100%;
+}
+.aaaaa {
+    font-size: 200%;
+}
+.aaaaaa {
+    height: 100vh;
+}
+.menuArray {
+    grid-template-columns: 1fr 1fr;
+}
+.cateringFloat {
+    margin: 0em 10%; 
+    padding: 2em 0;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 800px) {
+.storyBox {
+    background: rgba(255, 255, 255, 0.6);
+    height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.ab {
+    display: none;
+}
+.bc {
+    height: 25vh;
+}
+.descriptionBox5 {
+    height: 160vh;
+}
+#youtubeVid {
+    display: none;
+}
+.HIDE {
+    display: block;
+    width: 50%;
+    background: #D9AF52;
+    color: black;
+    margin: auto;
+    padding: .5em;
+    margin-top: 2em;
+    text-align: center;
+    transition: .25s;
+    outline: #D9AF52 5px solid;
+    border: black .25px solid;
+    /* position: absolute;  */
+    margin-left: 23%;
+}
+.aaaaaa {
+    height: 60vh;
+}
+.reserve {
+    font-size: 90%;
+}
+.reserveBtn {
+    font-size: 80%;
+}
+.infoBlurb {
+    margin: 0em 5%; 
+}
+.locationContainer {
+    font-family: "Outfit", sans-serif;
+    margin: 0 5%;
+    line-height: 25px;
+    font-size: 17px;
+}
+.menuArray {
+    margin: 0em 5%;
+}
+.storyBox {
+    background: rgba(255, 255, 255, 0.6);
+    height: 50vh;
+    position: relative;
+}
+
+.ddd {
+    display: none;
+}
 }
 
 @media screen and (max-width: 640px) {
+.landingText {
+    font-size: 200%;
+    padding: 0em;
+}
+.descriptionFloat {
+    height: 75%;
+    width: 85%;
+}
+.floatText {
+    font-size: 80%;
+}
+.cd {
+    display: none;
+}
+.descriptionFloat2 {
+    grid-column: 1 / 4;
+}
+.floatBtn {
+    bottom: 1em;
+}
+.floatBtn2 {
+    display: block;
+    width: 50%;
+    background: #D9AF52;
+    color: black;
+    margin: auto;
+    padding: .5em;
+    text-align: center;
+    transition: .25s;
+    outline: #D9AF52 5px solid;
+    border: black .25px solid;
+    position: absolute; 
+    bottom: 6em;
+    margin-left: 23%;
+}
+.floatBtn3 {
+    display: block;
+    width: 50%;
+    background: #D9AF52;
+    color: black;
+    margin: auto;
+    padding: .5em;
+    text-align: center;
+    transition: .25s;
+    outline: #D9AF52 5px solid;
+    border: black .25px solid;
+    position: absolute; 
+    bottom: 2em;
+    margin-left: 23%;
+}
+.descriptionFloat3 {
+    background: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    height: 70%;
+    width: 85%;
+    outline: rgba(255, 255, 255, 0.85) 1em solid;
+    border: #D9AF52 2px solid;
+    text-align: center;
+}
+.descriptionFloat4 {
+    display: none;
+}
+.newsletterModal {
+    width: 50%;
+}
+.mobileModal {
+    width: 50%;
+    padding: 1em;
+}
+
+.storyBox {
+    background: rgba(255, 255, 255, 0.6);
+    height: 50vh;
+    position: relative;
+}
+
+.ddd {
+    display: none;
+}
+
+
+.descriptionBox5 {
+    height: 150vh;
+}
+.descriptionFloat5 {
+    font-size: 80%;
+}
+.floatSubtitle5 {
+    font-size: 150%;
+}
+.floatText5 {
+    font-style: italic;
+    padding: 0.5em 2.5em;
+    font-size: 100%;
+}
+.aaaaaa {
+    height: 70vh;
+}
+.mapmap {
+    display: none;
+}
+.locationContainer {
+    font-size: 80%;
+}
+.actualMenuImg {
+    width: 100%; 
+    text-align: center;
+}
+.reserve {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+}
+.reservationForm {
+    margin: 0 10%;
+}
+#reserveBtn {
+    grid-column: 1 / 3;
+    margin-top: 3em;
+}
+
+.catering {
+    grid-template-columns: 1fr;
+    margin: 0em 10%; 
+    padding: 2em 0;
+    gap: 1em;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+}
+#newsletterEmail, #newsletterName {
+    margin-top: 10px;
+    height: 40px;
+    width: 60%;
+    padding: 0px 7.5px;
+    font-style: italic;
+}
+
+
 .footerTop {
     display: grid;
     grid-template-columns: 1fr;
@@ -1428,5 +1778,44 @@ footer {
 }
 .navTabs {
     font-size: 100%;
+}
+}
+
+@media screen and (max-width: 450px) {
+.landingText {
+    padding: 0em;
+}
+.landingTitle {
+    padding-bottom: 1em;
+    padding-top: 0em;
+}
+.landingBtn {
+    display: block;
+    width: 50%;
+    background: #D9AF52;
+    color: black;
+    margin: auto;
+    padding: .5em;
+    text-align: center;
+    transition: .25s;
+    outline: #D9AF52 5px solid;
+    border: black .25px solid;
+    font-size: 80%;
+}
+.mobileModal { 
+    width: 60%;
+    font-size: 100%;
+    padding: 2em;
+}
+.newsletterModal {
+    width: 60%;
+    font-size: 100%;
+    padding: 2em;
+}
+.descriptionBox5 {
+    height: 190vh;
+}
+.aaaaaa {
+    height: 70vh;
 }
 }
