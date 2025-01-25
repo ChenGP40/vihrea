@@ -1818,4 +1818,17 @@ header {
 .aaaaaa {
     height: 70vh;
 }
+.nameLogo {
+    height: 17px;
+    padding-top: .9em;
+    padding-bottom: .9em;
+}
+#hamburger {
+    display: block;
+    float: right;
+    padding-top: .75em;
+    margin-right: 3.5em;
+    height: 17px;
+    filter:brightness(3000%)
+}
 }
